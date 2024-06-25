@@ -3,12 +3,12 @@ import { useNavigate } from "react-router-dom";
 import LogoutIcon from "@mui/icons-material/Logout";
 import HomeIcon from "@mui/icons-material/Home";
 import AssignmentLateIcon from "@mui/icons-material/AssignmentLate";
-import AssignmentIcon from "@mui/icons-material/Assignment";
+// import AssignmentIcon from "@mui/icons-material/Assignment";
 import AssignmentTurnedInIcon from "@mui/icons-material/AssignmentTurnedIn";
 import NotStartedIcon from "@mui/icons-material/NotStarted";
-import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import PersonIcon from "@mui/icons-material/Person";
+// import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
+// import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+// import PersonIcon from "@mui/icons-material/Person";
 import namelogo from "../assets/img/namelogo.png";
 import "../assets/css/sidebar.css";
 import "../App.css";
@@ -57,13 +57,13 @@ function SidebarProvider({ children }) {
 
 function Sidebar() {
   const { expanded } = useContext(SidebarContext);
-  const [profileExpanded, setProfileExpanded] = useState(false);
+  // const [profileExpanded, setProfileExpanded] = useState(false);
   const [logoutDialogOpen, setLogoutDialogOpen] = useState(false); // State to control dialog visibility
   const navigate = useNavigate();
 
-  const toggleProfileExpand = () => {
-    setProfileExpanded(!profileExpanded);
-  };
+  // const toggleProfileExpand = () => {
+  //   setProfileExpanded(!profileExpanded);
+  // };
 
   const handleLogout = () => {
     setLogoutDialogOpen(true);
@@ -105,10 +105,10 @@ function Sidebar() {
             </li>
             {profileExpanded && ( */}
             <ul className="menu-links">
-              <li className="nav-link" onClick={() => navigate("/alltasks")}>
+              {/* <li className="nav-link" onClick={() => navigate("/alltasks")}>
                 <AssignmentIcon className="icon" />
                 <span className="text nav-text">Assigned Tasks</span>
-              </li>
+              </li> */}
               <li
                 className="nav-link"
                 onClick={() => navigate("/completedtasks")}

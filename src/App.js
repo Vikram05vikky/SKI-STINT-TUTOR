@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { SidebarProvider, Sidebar } from "./components/Sidebar";
-import LandingPage from "./components/LandingPage";
+// import LandingPage from "./components/LandingPage";
 import Task from "./components/Tasks";
 import Users from "./components/Users";
 import UserSB from "./components/Users";
@@ -27,9 +27,9 @@ export default function App() {
             <Navbar toggleSidebar={toggleSidebar} />
             <div className="content">
               <Routes>
-                <Route path="/" element={<LandingPage />} />
-                <Route path="/landingpage" element={<LandingPage />} />
-                <Route path="/alltasks" element={<Task />} />
+                {/* <Route path="/" element={<LandingPage />} /> */}
+                {/* <Route path="/landingpage" element={<LandingPage />} /> */}
+                <Route path="/" element={<Task />} />
                 <Route
                   path="/pendingtasks"
                   element={<Task filterType="progress" />}
