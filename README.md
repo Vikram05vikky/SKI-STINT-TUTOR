@@ -1,5 +1,5 @@
 # **DEMO**
-[ski-stint.vercel.app](https://ski-stint-seven.vercel.app/)
+[ski-stint.vercel.app](https://ski-stint-tutor.vercel.app/)
 
 # Getting Started with Create React App
 
